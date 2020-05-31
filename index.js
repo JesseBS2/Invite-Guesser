@@ -4,7 +4,7 @@ const Client = new Discord.Client();
 SecretToken = "insert token here";  // replace this with bot token
 
 /* 
-  THIS CODE IS FOR DISPLAY  PURPOSES ONLY, PLEASE NEVER USE THIS SCRIPT
+  THIS CODE IS FOR DISPLAY/JOKING PURPOSES ONLY, PLEASE NEVER USE THIS SCRIPT
   JESSE CAN NOT BE HELD RESPONSIBLE FOR ANY PROBLEMS OR ISSUES CAUSED BY THIS PROGRAM
 
   This bot will create random invite links for Discord, as discord simply uses `discord.gg/` followed by six alpha-numeric characters.
