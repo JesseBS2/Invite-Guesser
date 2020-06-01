@@ -6,10 +6,9 @@ const Client = new Discord.Client();
   THIS CODE WAS MADE ENTIRELY TO SHOW OF DISCORD'S EXPLOITABLE INVITE SYSTEM, PLEASE NEVER USE THIS SCRIPT
   I CAN NOT BE HELD RESPONSIBLE FOR ANY PROBLEMS OR ISSUES CAUSED BY THIS PROGRAM
   
-  This bot will create random invite links for Discord, as discord simply uses `discord.gg/` followed by six alpha-numeric characters.
-  The code here generates 6 random characters and sends them into your channel every 2.5 seconds.
-  Because there are (26*26*10)^6 or 95,428,956,661,680,000,000,000 possible server invite combinations, the odds of this bot guessing one are very low
-  I wrote this code on my phone in like 10 minutes out of bordem.
+  The code here generates 6 or 7 random characters and sends them into your channel every 2.5 seconds.
+  Because there are so many possible server invite combinations, the odds of this bot guessing one are very low.
+  I wrote the original code for this in about 10 minutes out of bordem.
 
   Does this count as hacking? I think this counts as hacking.
   "A security hacker is someone who explores methods for breaching defenses and exploiting weaknesses in a computer system or network. Hackers may be motivated by a multitude of reasons, such as profit, protest, information gathering, challenge, recreation, or to evaluate system weaknesses to assist in formulating defenses against potential hackers." - Wikipedia
@@ -84,7 +83,7 @@ Client.on("message",async msg => {
 
 function GenerateLink(){
  var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; // all characters that are available for discord invites
- var symbols = 6; // length of invites
+ var symbols = Math.round(Math.random()*1)+6; // generates a 0 or a 1 and adds six, thus giving us a 6 or a 7
  var toReturn = "";
  for(var count = 0; count < symbols; count++){  // loop through for length of invite
   toReturn += characters.charAt(Math.round(Math.random()*characters.length-1)); // pick random character from string
