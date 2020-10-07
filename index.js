@@ -6,7 +6,7 @@ const Client = new Discord.Client();
   THIS CODE WAS MADE ENTIRELY TO SHOW OF DISCORD'S EXPLOITABLE INVITE SYSTEM, PLEASE NEVER USE THIS SCRIPT
   I CAN NOT BE HELD RESPONSIBLE FOR ANY PROBLEMS OR ISSUES CAUSED BY THIS PROGRAM
   
-  The code here generates 6 or 7 random characters and sends them into your channel every 2.5 seconds.
+  The code here generates 7 random characters and sends them into your channel every 2.5 seconds.
   Because there are so many possible server invite combinations, the odds of this bot guessing one are very low.
   I wrote the original code for this in about 10 minutes out of bordem.
 
@@ -83,7 +83,7 @@ Client.on("message",async msg => {
 
 function GenerateLink(){
  var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; // all characters that are available for discord invites
- var symbols = Math.round(Math.random()*1)+6; // generates a 0 or a 1 and adds six, thus giving us a 6 or a 7
+ var symbols = 7; // how many characters to put in a link
  var toReturn = "";
  for(var count = 0; count < symbols; count++){  // loop through for length of invite
   toReturn += characters.charAt(Math.round(Math.random()*characters.length-1)); // pick random character from string
