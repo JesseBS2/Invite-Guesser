@@ -83,7 +83,7 @@ Client.on("message",async msg => {
 
 function GenerateLink(){
  var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; // all characters that are available for discord invites
- var symbols = 7; // how many characters to put in a link
+ var symbols = Math.round(Math.random()*1)+7; // how many characters to put in a link
  var toReturn = "";
  for(var count = 0; count < symbols; count++){  // loop through for length of invite
   toReturn += characters.charAt(Math.round(Math.random()*characters.length-1)); // pick random character from string
