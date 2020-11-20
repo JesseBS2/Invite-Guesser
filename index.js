@@ -6,7 +6,7 @@ const Client = new Discord.Client();
   THIS CODE WAS MADE ENTIRELY TO SHOW OF DISCORD'S EXPLOITABLE INVITE SYSTEM, PLEASE NEVER USE THIS SCRIPT
   I CAN NOT BE HELD RESPONSIBLE FOR ANY PROBLEMS OR ISSUES CAUSED BY THIS PROGRAM
   
-  The code here generates 7 random characters and sends them into your channel every 2.5 seconds.
+  The code here generates random characters and sends them into your channel every 2.5 seconds.
   Because there are so many possible server invite combinations, the odds of this bot guessing one are very low.
   I wrote the original code for this in about 10 minutes out of bordem.
 
